@@ -1,0 +1,49 @@
+<aside class="container-fluid">
+    <a class="header_email" href="mailto:info@interus.com.ua">
+        <i class="fas fa-envelope-square"></i>
+        <span>info@interus.com.ua</span>
+    </a>
+    <a class="header_phone" href="tel:+380443376403">
+        <i class="fas fa-phone-square"></i>
+        <span>+38 044 337 64 03</span>
+    </a>
+    <a target="_self" href="https://www.facebook.com/interUs2017/" style="width: 40px;">
+        <i class="fab fa-facebook-f" data-fa-mask="fas fa-circle" data-fa-transform="shrink-3.5 down-1.6 right-1.25"></i>
+        <span>Сторінка Facebook</span>
+    </a>
+</aside>
+
+<header class="navbar navbar-expand fixed-top site-navbar">
+    {{ $url := .URL | relLangURL }}
+    <a class="navbar-brand" href="/"><img src="{{ .Site.BaseURL }}img/interus_logo_179x65.svg"></a>
+    <nav class="navbar-nav-scroll  ml-auto">
+        <ul class="navbar-nav bd-navbar-nav">
+        {{ range .Site.Menus.main }}
+            <li class="nav-item">
+                <a class="nav-link{{ if eq $url (.URL | relLangURL) }} active{{end}}" href="{{ .URL | absLangURL }}" title="{{ .Title }}">
+                {{- .Name -}}
+                {{- with .Page -}}
+                    <span class="date">
+                    {{- dateFormat " (2006-01-02)" .Date -}}
+                    </span>
+                {{- end -}}
+                </a>
+            </li>
+        {{ end }}
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="langSwitcher" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ .Site.Language.LanguageName }}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    {{ range $.AllTranslations }}                    
+                    <a class="dropdown-item" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                    {{ end }}
+                </div>                
+            </li>                
+        </ul>
+    </nav>
+    <ul>
+        
+    </ul>
+
+</header>

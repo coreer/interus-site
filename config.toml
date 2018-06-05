@@ -1,0 +1,64 @@
+baseURL = "https://www.interus.com.ua/"
+languageCode = "ua"
+theme = "interus-theme"
+
+# Languages
+defaultContentLanguage = "ua"
+
+[params]
+  logoimage = "img/interus_logo_179x65.svg"
+
+
+[languages.ua]
+  languageName = "Укр"
+
+  copyright = "&#169; ТОВ \"Інтерас\" | 2017-2018"  
+
+  [[languages.ua.menu.main]]
+    url = "/"
+    name = "Головна"
+    weight = 1
+  [[languages.ua.menu.main]]
+    url = "/about/"
+    name = "Про нас"
+    weight = 2
+  [[languages.ua.menu.main]]
+    url = "/contact/"
+    name = "Кантакти"
+    weight = 3
+
+[languages.ru]
+  languageName = "Рус"
+
+  copyright = "&#169; ООО \"Интерас\" | 2017-2018"
+
+  [[languages.ru.menu.main]]
+    url = "/ru/"
+    name = "Главная"
+    weight = 1
+  [[languages.ru.menu.main]]
+    url = "/about/"
+    name = "О нас"
+    weight = 2
+  [[languages.ru.menu.main]]
+    url = "/contact/"
+    name = "Контакты"
+    weight = 3
+
+[languages.en]
+  languageName = "En"
+
+  copyright = "&#169; \"Interus\" Ltd | 2017-2018"
+
+  [[languages.en.menu.main]]
+    url = "/en/"
+    name = "Main"
+    weight = 1
+  [[languages.en.menu.main]]
+    url = "/about/"
+    name = "About us"
+    weight = 2
+  [[languages.en.menu.main]]
+    url = "/contact/"
+    name = "Contact"
+    weight = 3

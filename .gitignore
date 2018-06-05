@@ -1,0 +1,5 @@
+.idea
+.DS_Store
+themes/*
+!themes/interus-theme
+public
