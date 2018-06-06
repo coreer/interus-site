@@ -1,18 +1,37 @@
 baseURL = "https://www.interus.com.ua/"
-languageCode = "ua"
 theme = "interus-theme"
-
-# Languages
 defaultContentLanguage = "ua"
 
 [params]
-  logoimage = "img/interus_logo_179x65.svg"
+  email = "info@interus.com.ua"
+  phone = "+38(044)337-64-03" 
+  facebook = "https://www.facebook.com/interUs2017/"
 
-
+  
+# Languages
 [languages.ua]
   languageName = "Укр"
-
-  copyright = "&#169; ТОВ \"Інтерас\" | 2017-2018"  
+ 
+  copyright = "2017-2018. ТОВ \"Інтерас\""  
+  facebookLinkCaption = "Сторінка Facebook"
+  footerCol1 = [
+    "#### Про нас",
+    "<p>Ми – команда однодумців, що люблять свою країну, “мріють про” та “працюють для” її процвітання",
+    "[Детальніше...](/about/)"
+  ]
+  footerCol2 = [
+    '#### Графік роботи',
+    '<p>Будні: 9:00 — 18:00',
+    '<p>Субота — Неділя: вихідний'
+  ]
+  footerCol3 = [
+    '#### Наші контакти',
+    '<p>04119',
+    '<p>м. Київ',
+    '<p>вул. Зоологічна 4а, оф. 139'
+  ]
+  
+  
 
   [[languages.ua.menu.main]]
     url = "/"
@@ -24,13 +43,31 @@ defaultContentLanguage = "ua"
     weight = 2
   [[languages.ua.menu.main]]
     url = "/contact/"
-    name = "Кантакти"
+    name = "Контакти"
     weight = 3
 
 [languages.ru]
   languageName = "Рус"
 
-  copyright = "&#169; ООО \"Интерас\" | 2017-2018"
+  copyright = "2017-2018. ООО \"Интерас\""
+  facebookLinkCaption = "Страница Facebook"
+
+  footerCol1 = [
+    "#### О нас",
+    "<p>Мы – команда единомышленников, которые любят свою страну, “мечтают о” и “трудятся для” ее процветания",
+    "[Подбробнее...](/ru/about/)"
+  ]
+  footerCol2 = [
+    '#### График работы',
+    '<p>Будние: 9:00 — 18:00',
+    '<p>Суббота — Воскресенье: выходной'
+  ]
+  footerCol3 = [
+    '#### Наши контакты',
+    '<p>04119',
+    '<p>м. Киев',
+    '<p>вул. Зоологическая 4а, оф. 139'
+  ]
 
   [[languages.ru.menu.main]]
     url = "/ru/"
@@ -48,7 +85,25 @@ defaultContentLanguage = "ua"
 [languages.en]
   languageName = "En"
 
-  copyright = "&#169; \"Interus\" Ltd | 2017-2018"
+  copyright = "2017-2018. \"Interus\" Ltd"
+  facebookLinkCaption = "Facebook page"
+
+  footerCol1 = [
+    "#### About us",
+    "<p>We are a team of like-minded people who love their country, \"settle about\" and \"work for\" its prosperity",
+    "[Details...](/en/about/)"
+  ]
+  footerCol2 = [
+    '#### Schedule',
+    '<p>Weekdays: 9:00 - 18:00',
+    '<p>Saturday - Sunday: closed'
+  ]
+  footerCol3 = [
+    '#### Contacts',
+    '<p>04119',
+    '<p>Kyiv',
+    '<p>Zoologichna Street, 4а, off. 139'
+  ]
 
   [[languages.en.menu.main]]
     url = "/en/"
@@ -62,3 +117,4 @@ defaultContentLanguage = "ua"
     url = "/contact/"
     name = "Contact"
     weight = 3
+

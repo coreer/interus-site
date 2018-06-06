@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ $.Site.LanguageCode | default "en" }}">
+<html lang="{{ .Lang }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,7 +9,10 @@
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
     
-    <link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
+    <link href="{{ .Site.BaseURL }}css/styles.css" rel="stylesheet">
+    <link href="{{ .Site.BaseURL }}css/styles.override.css" rel="stylesheet">
+
+    <link rel="shortcut icon"  type="image/x-icon"  href="{{.Site.BaseURL }}favicon.ico">
 
     <title>
       {{ block "title" . }}
@@ -23,19 +26,9 @@
         {{ partial "header" . }}
       {{ end }}
 
-      {{ block "body" . }}
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-8 blog-main">
-
-            {{ block "main" . }}
-            {{ end }}
-
-          </div>
-
-
-        </div>
-      </div>
+      {{ block "body" . }}              
+        {{ block "main" . }}
+        {{ end }}
       {{ end }}
 
       {{ block "footer" . }}

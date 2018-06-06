@@ -1,3 +1,36 @@
-<footer>
-    Footer
+<footer class="bd-footer text-muted">
+    <div id="footerContent" class="container">
+        <div class="row">
+            {{ with .Site.Params.footerCol1 }}
+            <div class="col-md-3">
+                {{ range .}}
+                {{ . | markdownify }}
+                {{ end}}
+            </div>
+            {{ end}}
+            {{ with .Site.Params.footerCol2 }}
+            <div class="col-md-3">
+                {{ range .}}
+                {{ . | markdownify }}
+                {{ end}}
+            </div>
+            {{ end}}
+            {{ with .Site.Params.footerCol3 }}   
+            <div class="col-md-3">
+                {{ range .}}
+                {{ . | markdownify }}
+                {{ end}}
+                <p><a href="mailto:{{ $.Site.Params.email }}">{{ $.Site.Params.email }}</a></p>
+                <p><a href="tel:{{ $.Site.Params.phone }}">{{ $.Site.Params.phone }}</a>
+            </div>
+            {{ end}}
+        </div>
+    </div>
+    <div id="footerConclusion" class="d-flex justify-content-between">
+        <div class="copyright">&copy;{{ .Site.Params.copyright }}</div>
+        <a href="{{ .Site.Params.facebook }}"  class="d-none d-md-block" target="_blank">
+            <i class="fab fa-facebook-f" data-fa-mask="fas fa-circle" data-fa-transform="shrink-3.5 down-1.6 right-1.25"></i>
+            <span>{{ .Site.Params.facebookLinkCaption}}</span>
+        </a>
+    </div>
 </footer>

@@ -1,0 +1,67 @@
+h1, h2, h3, h4, h5, h6,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #e53232;
+}
+
+header {
+    box-shadow: 0 0 10px rgba(0,0,0,.12);
+}
+
+#quickContactDetails {
+    padding: 0 1rem;
+    font-size: 13px;
+}
+
+#quickContactDetails a {
+    color: #949494;
+}
+
+#quickContactDetails a:hover {
+    color: #e53232;
+}
+
+#mainNavbarToggler a.nav-link {
+    border-bottom: 2px solid transparent;    
+}
+
+#mainNavbarToggler a.nav-link:hover {
+    color: #e53232;
+    border-color: #e53232;        
+}
+
+#mainNavbarToggler a.nav-link:hover {
+    color: #e53232;
+    border-bottom: 2px solid;
+}
+
+footer {    
+    color: #959595;
+    background-color: #202020;
+    padding: 1.5rem 1rem 0;
+}
+
+
+footer h4{ 
+    color: #fff;
+}
+
+footer a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+#footerConclusion {
+    background-color: #000000;
+}
+
+#footerConclusion a{
+    color: #959595;
+}
+#footerConclusion a:hover {
+    color: #fff;   
+}
+

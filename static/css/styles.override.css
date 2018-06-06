@@ -1,0 +1,23 @@
+#carouselBannersOnMain  .carousel-control-prev-icon,
+#carouselBannersOnMain  .carousel-control-next-icon {    
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+}
+
+#carouselBannersOnMain .carousel-caption {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    left: auto;
+    width: 30%;
+    height: 40%;
+    color: #000;
+    text-align: left;
+}
+
+#imarBannerCaptionBlock {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    opacity: 1;
+}
+
